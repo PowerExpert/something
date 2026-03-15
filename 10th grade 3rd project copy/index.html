@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Basics Tutorial</title>
+
+<style>
+body{
+    font-family: Arial;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border:1px solid black;
+    padding:10px;
+}
+
+.menu{
+    width:200px;
+    vertical-align: top;
+}
+
+iframe{
+    width:700px;
+    height:400px;
+}
+
+pre{
+    background:#f4f4f4;
+    padding:10px;
+    border:1px solid #ccc;
+    overflow:auto;
+}
+</style>
+
+</head>
+
+<body>
+<div style="background:#FFFFFF;padding:10px;">
+    <a href="projects.html" style="
+    color:white;
+    background:#000000;
+    padding:10px 15px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;">
+    Mini Projects
+    </a>
+</div>
+
+<h1>HTML Examples</h1>
+
+<table>
+
+<tr>
+
+<td class="menu">
+
+<h3>Examples</h3>
+
+<ul>
+<li><a href="text_example.html" target="viewer">Text</a></li>
+<li><a href="image_example.html" target="viewer">Image</a></li>
+<li><a href="table_example.html" target="viewer">Table</a></li>
+<li><a href="video_example.html" target="viewer">Video</a></li>
+<li><a href="audio_example.html" target="viewer">Audio</a></li>
+</ul>
+
+</td>
+
+<td>
+
+<iframe name="viewer"></iframe>
+
+</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h1>How This Page Was Made</h1>
+
+<h2>1. Creating the iframe viewer</h2>
+
+<p>The iframe displays example pages inside the main page.</p>
+
+<pre>
+&lt;iframe name="viewer"&gt;&lt;/iframe&gt;
+</pre>
+
+<p>The links use <b>target="viewer"</b> so they open inside the iframe.</p>
+
+<pre>
+&lt;a href="example_table.html" target="viewer"&gt;Table&lt;/a&gt;
+</pre>
+
+
+
+<h2>2. Creating the menu</h2>
+
+<p>The menu is just a list of links.</p>
+
+<pre>
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="example_text.html" target="viewer"&gt;Text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="example_image.html" target="viewer"&gt;Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="example_table.html" target="viewer"&gt;Table&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+
+<h2>3. Using a table for layout</h2>
+
+<p>The page layout is made using a table with two columns.</p>
+
+<pre>
+&lt;table&gt;
+&lt;tr&gt;
+
+&lt;td&gt;Menu&lt;/td&gt;
+&lt;td&gt;Iframe Viewer&lt;/td&gt;
+
+&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+
+
+<h2>4. Example of an Image</h2>
+
+<pre>
+&lt;img src="image.jpg"&gt;
+</pre>
+
+
+
+<h2>5. Example of a Video</h2>
+
+<pre>
+&lt;video controls&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+</pre>
+
+
+
+<h2>6. Example of Audio</h2>
+
+<pre>
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+</pre>
+
+
+
+<h2>7. Example of a Table</h2>
+
+<pre>
+&lt;table border="1"&gt;
+
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ali&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+</pre>
+
+<p>
+This is how the HTML tutorial page itself is built.
+</p>
+
+</body>
+</html>

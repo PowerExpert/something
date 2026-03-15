@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лендинг</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+  body { line-height: 1.5; }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #8800ff;
+    color: white;
+  }
+  header a { color: white; text-decoration: none; margin-left: 20px; }
+
+  .hero {
+    text-align: center;
+    padding: 100px 10%;
+    background: #eee;
+  }
+  .hero h1 { font-size: 3em; margin-bottom: 20px; }
+  .hero p { font-size: 1.2em; margin-bottom: 30px; }
+  .hero button {
+    background: #8800ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .hero button:hover { background: #8800ff; }
+
+  .benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+  }
+  .benefit {
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  #registration {
+    padding: 50px 10%;
+    background: #f2f2f2;
+    display: none;
+  }
+  #registration form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #registration input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  #registration button {
+    background: #8800ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  #registration button:hover { background: #5b4acb; }
+  
+  footer {
+    text-align: center;
+    padding: 30px 10%;
+    background: #8800ff;
+    color: white;
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 2em; }
+    .benefits { flex-direction: column; gap: 20px; }
+    .benefit { width: 100%; }
+    header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Мой Лендинг</div>
+  <nav>
+    <a href="#">О нас</a>
+    <a href="#">Программа</a>
+    <a href="#">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Начни свой путь к успеху!</h1>
+  <p>Присоединяйтесь к нашей программе и развивайтесь каждый день.</p>
+  <button id="signupBtn">Записаться</button>
+</section>
+
+<section class="benefits">
+  <div class="benefit">
+    <h2>Преимущество 1</h2>
+    <p>Описание преимущества.</p>
+  </div>
+  <div class="benefit">
+    <h2>Преимущество 2</h2>
+    <p>Описание преимущества.</p>
+  </div>
+  <div class="benefit">
+    <h2>Преимущество 3</h2>
+    <p>Описание преимущества.</p>
+  </div>
+</section>
+
+<section id="registration">
+  <h2>Регистрация</h2>
+  <form>
+    <input type="text" placeholder="Имя" required>
+    <input type="email" placeholder="Email" required>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2026 Мой Лендинг
+</footer>
+
+<script>
+  const signupBtn = document.getElementById('signupBtn');
+  const registration = document.getElementById('registration');
+
+  signupBtn.addEventListener('click', () => {
+    registration.scrollIntoView({ behavior: 'smooth' });
+    registration.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
